@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    color: white;
+    box-sizing: border-box;
+}
+.head{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid white;
+    padding: 15px;
+    background-image: url(head-backgroung.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 17.8125rem;
+    width: 100%;
+}
+
+.head h1{
+    flex-basis: 75%;
+    flex-grow: 0;
+    flex-shrink: 1;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2rem;
+}
+.head h6{
+    flex-grow: 0;
+    flex-shrink: 1;
+    font-size: 1rem;
+    font-family: 'Orbitron', sans-serif;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid white;
+    background-color: black;
+    background-image: url(/2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    align-content: space-between;
+}
+.container h1{ 
+    font-size: 2rem;
+    font-family: 'Orbitron', sans-serif;
+    animation-name: name;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes name {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }  
+}
+.container p{
+    font-size: 1rem;
+    font-family: 'Permanent Marker', cursive;
+    padding: 15px;
+    margin: 10px;
+}
+.img{
+    display: grid;
+    grid-template-columns: auto auto;
+    border-bottom: 1px solid white;
+    background-color: black;
+    justify-items: center;
+}
+.img h1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2rem;
+    animation-name: name;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.item1{
+    grid-row-start: 2;
+    grid-row-end: 5;
+}
+img{
+    height: 100%;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.cre{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: black;
+}
+.item1{
+    flex-basis: 50%;
+    flex-shrink: 1;
+    flex-grow: 0;
+}
+.item2{
+    flex-basis: 50%;
+    flex-shrink: 0;
+    flex-grow: 0;
+    padding: 15px;
+    position: relative;
+
+}
+.item1 img{
+    width: 47vmin;
+    align-items: center;
+}
+.icon{
+    position: absolute;
+    margin: 10px auto; 
+}
+.icon a,p{
+    padding: 8px 5px;
+    align-items: center;
+}
+.item2 p{
+    font-size: x-small;
+}
+
